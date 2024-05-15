@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Egreg';
+    src: url('fonts/egreg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Egmed';
+    src: url('fonts/egmed.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff; /* Set background to white */
+    margin: 0;
+    color: black; /* Set text color to black for better contrast */
+}
+
+.container {
+    text-align: center;
+    max-width: 60%;
+}
+
+.logo {
+    width: 100px; /* Set the width of the image */
+    height: 100px; /* Set the height of the image */
+    margin-bottom: 15px; /* Space between the image and the title */
+}
+
+.title {
+    font-family: 'Egmed', Arial, sans-serif; /* Apply custom font to title */
+    font-size: 60px;
+    margin-bottom: 10px;
+    letter-spacing: 1px; /* Increase letter spacing */
+}
+
+.subtitle {
+    font-family: 'Egreg', Arial, sans-serif; /* Apply custom font to subtitle */
+    font-size: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px; /* Increase letter spacing */
+}
+
+.tab-button {
+    font-family: 'Egreg', Arial, sans-serif; /* Apply custom font to tabs */
+    font-size: 24px; /* Set font size for button text */
+    background-color: #ffffff; /* Set background to white */
+    color: black; /* Set text color to black */
+    border: 2px solid black; /* Add black outline */
+    padding: 10px 20px; /* Adjust padding to fit larger text */
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+}
+
+.tab-button:hover {
+    background-color: black; /* Change background to white on hover */
+    color: white; /* Change text color to black on hover */
+}
+
+.tab-content {
+    font-family: 'Egreg', Arial, sans-serif; /* Apply custom font to tabs */
+    display: none;
+    margin-top: 20px;
+    font-size: 24px; /* Set font size for tab content */
+    text-align: center; /* Align text to the center */
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content a {
+    color: black; /* Set hyperlink color to black */
+    text-decoration: none; /* Remove underline from hyperlinks */
+}
+
+.tab-content a:hover {
+    text-decoration: underline; /* Underline hyperlinks on hover */
+}
