@@ -86,3 +86,32 @@ body {
 .tab-content a:hover {
     text-decoration: underline; /* Underline hyperlinks on hover */
 }
+
+@media (min-width: 600px) {
+    .container {
+        width: 60%; /* Limit the width of the container */
+        max-width: 60%;
+    }
+
+    .logo {
+        width: 150px; /* Set the width of the image */
+        height: 150px; /* Set the height of the image */
+    }
+
+    .title {
+        font-size: 60px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+    }
+
+    .tab-button {
+        font-size: 24px;
+        padding: 20px 40px;
+    }
+
+    .tab-content {
+        font-size: 24px;
+    }
+}
